@@ -8,7 +8,8 @@ This file provides guidance to Claude Code to write high-quality, maintainable, 
 
 ## Project Context
 
-If you don't feel you have sufficient context regarding the purpose and intent of this project, read the Product Requirements Document (PRD) from `PRD.md` located in the root directory of this repository.
+- Before beginning any task, you _must_ read the Product Requirements Document (PRD) from `PRD.md` located in the root directory of this repository
+- Ensure all changes you make align with the goals and technical requirements of the PRD
 
 ## Technical Architecture
 
@@ -62,3 +63,29 @@ func Test_[Insert Test Name](t *testing.T) {
     }
 }
 ```
+
+### Example Clarifying Questions
+
+The AI should adapt its questions based on the task and requirements, but here are some common areas to explore:
+
+*   **Problem/Goal:** "What problem does this feature solve for the user?" or "What is the main goal we want to achieve with this feature?"
+*   **Target User:** "Who is the primary user of this feature?"
+*   **Core Functionality:** "Can you describe the key actions a user should be able to perform with this feature?"
+*   **User Stories:** "Could you provide a few user stories? (e.g., As a [type of user], I want to [perform an action] so that [benefit].)"
+*   **Acceptance Criteria:** "How will we know when this feature is successfully implemented? What are the key success criteria?"
+*   **Scope/Boundaries:** "Are there any specific things this feature *should not* do (non-goals)?"
+*   **Data Requirements:** "What kind of data does this feature need to display or manipulate?"
+*   **Design/UI:** "Are there any existing design mockups or UI guidelines to follow?" or "Can you describe the desired look and feel?"
+*   **Edge Cases:** "Are there any potential edge cases or error conditions we should consider?"
+
+## Update Technical Architecture
+
+After every change you make in the repository, you _must_ update the `Technical Architecture` section of the `CLAUDE.md` file located in the root directory of the repository.
+
+## Clarifying Questions
+
+When you ask the user clarifying questions, you _must_ follow the following rules:
+
+- The goal is to understand the "what" and "why" of the feature, not necessarily the "how" (which the developer will figure out). Make sure to provide options in number lists so I can respond easily with my selections
+- Only ask **one** clarifying question at a time
+- Use the responses from clarifying questions to improve all tasks you perform
