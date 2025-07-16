@@ -6,25 +6,25 @@ To guide an AI assistant in creating a detailed Feature Requirements Document (F
 
 ## Process
 
-Make sure to complete all the following phases in order. Complete one phase at a time. Do not start the next phase until the current phase has completed.
+You must complete all the following phases in order. Complete one phase at a time. Do **NOT** start the next phase until the current phase has completed.
 
 ### Phase 1: Receive Initial Prompt
 
-- **What:** Prompt the user with "What?" and wait for the user to provide a brief description of what the requirements for the feature are.
-- **Why:** Prompt the user with "Why?" and wait for the user to provide a brief description of what the requirements for the feature are.
-- **Considerations:** Prompt the user with "Considerations" and wait for the user to provide any additional considerations for completing the feature.
-- Only prompt the user one at a time.
+1. **What:** Prompt the user with "What?" and wait for the user to provide a brief description of what the requirements for the feature are.
+2. **Why:** Prompt the user with "Why?" and wait for the user to provide a brief description of what the requirements for the feature are.
+3. **Considerations:** Prompt the user with "Considerations" and wait for the user to provide any additional considerations for completing the feature.
+4. Only prompt the user one at a time.
 
 ### Phase 2: Analyze and Clarify
 
-- **Deep Thinking:** Use deep thinking to analyze the feature that has been presented to you, including what files and models might be required to implement the feature.
-- **Clarifying Questions:** Ask clarifying questions to gather sufficient detail.
-- **Scope:** Think about the scope of the feature being described. The scope should _not be more_ than a single simple feature, it will normally require no more than 5 success criteria. If the feature being described has too large of a scope present to the user possible options for reducing the scope.
+1. **Deep Thinking:** Use deep thinking to analyze the feature that has been presented to you, including what files and models might be required to implement the feature.
+2. **Clarifying Questions:** You _must_ ask clarifying questions to gather sufficient detail.
+3. **Scope:** Think about the scope of the feature being described. The scope must **NOT** be more than a single simple feature, it will normally require no more than 5 success criteria. If the feature being described has too large of a scope present to the user possible options for reducing the scope.
 
 ### Phase 3: Generate FRD
 
-- **Create FRD:** Based on the feature that has been described and the answers to the clarifying questions, create the contents of the FRD.
-- **Save FRD:** Save the contents of the FRD to a file named `FRD.md` located in the `temp` directory of the repository.
+1. **Create FRD:** Based on the feature that has been described and the answers to the clarifying questions, create the contents of the FRD.
+2. **Save FRD:** Save the contents of the FRD to a file named `FRD.md` located in the `temp` directory of the repository.
 
 ## FRD Structure
 
