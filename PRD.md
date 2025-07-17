@@ -96,10 +96,10 @@ func (b *Board) SetFromString(string) error
 func (b Board) Validate() error
 
 // Places a piece on the board in the given coordinates.
-func (b *Board) Place(x, y, piece int) error
+func (b *Board) PlacePiece(x, y, piece int) error
 
 // Flips the piece on the board in the given coordinates.
-func (b *Board) Flip(x, y int) error
+func (b *Board) FlipPiece(x, y int) error
 
 // Returns an ASCII representation of the board state.
 func (b Board) String() string
