@@ -31,7 +31,7 @@ The following features are explicitly out of scope:
 
 ## Requirements
 
-Function Requirements:
+Functional Requirements:
 
 1. The library must support configurable board sizes (e.g. 6x6, 8x8, 10x10).
 2. The game state must track board positions, player turn, and move history.
@@ -39,7 +39,7 @@ Function Requirements:
 4. When a valid move is played, the library must flip the appropriate opponent pieces.
 5. Invalid moves must return a descriptive error without modifying the game state.
 6. The ASCII renderer must output a human-readable board without coordinates.
-7. The dumb AI must play instantly by selection a random move and applying it.
+7. The dumb AI must play instantly by selecting a random move and applying it.
 
 Non-Functional Requirements:
 
@@ -63,7 +63,7 @@ type Game struct {
 }
 
 // Create a new game with a given board size.
-func NewGame(rows, cold int) *Game
+func NewGame(rows, cols int) *Game
 
 // Get the current player.
 func (g Game) CurrentPlayer() int
@@ -71,7 +71,7 @@ func (g Game) CurrentPlayer() int
 // Get valid moves for the current player.
 func (g Game) ValidMoves() []Move
 
-// Attemt to play a move, returns error if invalid.
+// Attempt to play a move, returns error if invalid.
 func (g *Game) Play(move Move) error
 
 // Returns an ASCII representation of the game state.
@@ -99,7 +99,7 @@ func (b Board) Validate() error
 func (b *Board) Place(x, y, piece int) error
 
 // Flips the piece on the board in the given coordinates.
-func (b *Board) Flip(x, y) error
+func (b *Board) Flip(x, y int) error
 
 // Returns an ASCII representation of the board state.
 func (b Board) String() string

@@ -1,2 +1,2 @@
 # gothello
-A lightweight othello engine in Go
+A lightweight Othello engine in Go

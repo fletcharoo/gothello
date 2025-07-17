@@ -28,9 +28,9 @@ This file provides guidance to Claude Code to write high-quality, maintainable, 
 
 ## Code Style & Conventions
 
-In additiona to using idiomatic Go conventions, be sure that all code aligns with the following style and conventions:
+In addition to using idiomatic Go conventions, be sure that all code aligns with the following style and conventions:
 
-- Before writing any code, be sure to think really hard about the problem you're solving, considering multiple implementations, and use your best judgement to choose the best implementation
+- Before writing any code, be sure to think really hard about the problem you're solving, considering multiple implementations, and use your best judgment to choose the best implementation
 - Where possible use already established patterns
 - All names should be descriptive
 - Follow early return principles
@@ -39,10 +39,10 @@ In additiona to using idiomatic Go conventions, be sure that all code aligns wit
 - All code should be documented with comments that align with godoc standards
 - Code should have 100% test coverage
 - Test assertions should be done with the `testify/stretchr/assert` package
-- Test requireents should be done with the `testify/stretchr/require` package
+- Test requirements should be done with the `testify/stretchr/require` package
 - Tests should make use of table testing aligning with the template described below
 - All code should align with single responsibility principle
-- All code should align with separate of concerns
+- All code should align with separation of concerns
 
 ## Examples
 
